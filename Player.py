@@ -5,6 +5,14 @@ class Player:
         self.id = id
         self.action = False
         self.score = 0
+        self.would_play = True
+        self.hand = []
+        self.collection = []
+
+    def reset(self):
+        self.action = False
+        self.score = 0
+        self.would_play = True
         self.hand = []
         self.collection = []
 

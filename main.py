@@ -8,6 +8,12 @@ d.shuffle()
 print("------new Deck-----")
 d.output_deck()'''
 
+
+#input aus konsole
+answer = input("Wie heißt du?")
+print(f"Dein Name ist {answer}")
+
+
 g = Game.Game(5)
 print("------players ----")
 g.output_players(0)
@@ -16,6 +22,7 @@ g.output_players(2)
 g.output_players(3)
 g.output_players(4)
 print("--------start Game--------")
+g.Gamestart()
 g.set_trumpf(1)
 for i in range(0, 8):
     g.players[0] = g.play_Card(0, g.players[0])
@@ -27,5 +34,8 @@ for i in range(0, 8):
     g.output_Stack()
     print(f"winner of the stack: {g.check_win_Stack()[1]} ")
     g.clear_stack()
+
+
+
 
 
